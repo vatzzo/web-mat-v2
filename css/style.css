@@ -539,7 +539,7 @@ body {
     height: 100rem;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
     background-blend-mode: multiply;
-    background-image: linear-gradient(to right bottom, #d4d4dc, #d4d4dc), url("../../images/laptop.jpg");
+    background-image: linear-gradient(to right bottom, #d4d4dc, #d4d4dc), url("../images/laptop.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
