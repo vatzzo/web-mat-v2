@@ -1,0 +1,204 @@
+.hobbies {
+    width: 100%;
+    height: 150vh;
+    text-align: center;
+    background-color: $color-pri-very-light;
+    padding: 30rem 0;
+    margin-top: -24rem;
+    text-align: center;
+
+    &__heading {
+        position: relative;
+        display: inline-block;
+        font-size: 3rem;
+        margin: 3rem 0;
+        padding: 1.5rem 4rem;;
+        background-color: $color-pri;
+        color: white;
+
+        &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: -15%;
+            left: -5%;
+            width: 100%;
+            height: 100%;
+            border: solid 0.4rem $color-sec;
+            transition: all .3s;
+            transform: skewX(6deg);
+        }
+    }
+
+    .pictures {
+      width: 100%;
+      height: 90%;
+      display: grid;
+      grid-template-columns: repeat(17, 1fr);
+      grid-template-rows: repeat(18, 1fr);
+      z-index: 100;
+
+      @include res(vtab) {
+        grid-template-rows: repeat(25, 1fr);
+      }
+
+      .picture-box {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 150;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          background-position: center;
+          z-index: -1;
+          transition: all 0.3s;
+          border-radius: 4px;
+          box-shadow: 0 0 3rem 0.5rem rgba(black, 0.2);
+        }
+
+        &:hover {
+          border-radius: 0px;
+        }
+
+        &:hover:before {
+          filter: blur(1px) brightness(60%);
+          transform: scale(0.95);
+          box-shadow: none;
+        }
+
+        &__heading {
+            background-color: $color-sec;
+            padding: 0.5rem 2rem;
+            border-radius: 2px;
+            display: inline-block;
+        }
+
+        @include res(vtab) {
+          filter: brightness(80%);
+          box-shadow: none;
+        }
+
+        &:hover h5 {
+          display: inline-block;
+          visibility: visible;
+          opacity: 1;
+          animation-name: heading-jump;
+          animation-duration: 1.5s;
+          animation-timing-function: ease-in-out;
+        }
+
+        h5 {
+          position: relative;
+          visibility: hidden;
+          opacity: 0;
+          transition: all 1s;
+          color: $color-white;
+
+          @include res(vtab) {
+            visibility: visible;
+            opacity: 1;
+            font-size: 3rem;
+          }
+
+          @include res(mobile) {
+            visibility: visible;
+            opacity: 1;
+            font-size: 2rem;
+          }
+        }
+
+        &--1 {
+          position: relative;
+          grid-column: 3 / span 5;
+          grid-row: 2 / span 16;
+
+          &::before {
+            background-image: url("./images/mat-palm.JPG");
+          }
+
+          @include res(vtab) {
+            grid-column: 10 / span 5;
+            grid-row: 13 / span 13;
+          }
+
+          @include res(mobile) {
+            grid-column: 10 / span 7;
+            grid-row: 13 / span 13;
+          }
+        }
+
+        &--2 {
+          position: relative;
+          grid-column: 9 / span 7;
+          grid-row: 2 / span 8;
+
+          &::before {
+            background-image: url("./images/mat-skates.jpg");
+          }
+          @include res(vtab) {
+            grid-column: 4 / span 11;
+            grid-row: 2 / span 10;
+          }
+
+          @include res(mobile) {
+            grid-column: 2 / span 15;
+            grid-row: 2 / span 10;
+          }
+        }
+
+        &--3 {
+          position: relative;
+          grid-column: 9 / span 2;
+          grid-row: 11 / span 7;
+
+          &::before {
+            background-image: url("./images/mat-quad.jpg");
+            @include res(vtab) {
+              background-position: top;
+            }
+          }
+
+          @include res(vtab) {
+            grid-column: 4 / span 5;
+            grid-row: 13 / span 13;
+          }
+
+          @include res(mobile) {
+            grid-column: 2 / span 7;
+            grid-row: 13 / span 6;
+          }
+        }
+
+        &--4 {
+          position: relative;
+          grid-column: 12 / span 4;
+          grid-row: 11 / span 7;
+
+          &::before {
+            background-image: url("./images/mat-friends.jpg");
+          }
+
+          @include res(vtab) {
+            display: none;
+          }
+
+          @include res(mobile) {
+            display: flex;
+            grid-column: 2 / span 7;
+            grid-row: 20 / span 6;
+          }
+        }
+      }
+    }
+}

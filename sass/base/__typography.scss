@@ -1,0 +1,129 @@
+// Layout 
+
+.navigation {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.header {
+    font-family: 'Roboto', sans-serif;
+    &__text {
+        text-align: end;
+        &--name {
+            font-size: 7rem;
+
+            @include res(vtab) {
+                font-size: 6rem;
+            }
+
+            @include res(mobile) {
+                font-size: 5rem;
+            }
+        }
+
+        &--prof {
+            font-weight: 400;
+            font-size: 4.5rem;
+
+            @include res(vtab) {
+                font-size: 3.5rem;
+            }
+
+            @include res(mobile) {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+.info {
+    font-family: 'Roboto', sans-serif;
+        .textbox {
+            &__content {
+                text-align: justify;
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
+}
+
+.edu {
+    font-family: 'Roboto', sans-serif;
+    &__technologies {
+        text-align: center;
+        h3 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.hobbies {
+    font-family: 'Roboto', sans-serif;
+    &__heading {
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    .pictures {
+        .picture-box {
+            &__heading {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.portfolio {
+    font-family: 'Roboto', sans-serif;
+    &__showcase {
+        .item {
+            .textbox {
+                &__title {
+                    font-size: 3rem;
+
+                    @include res(vtab) {
+                        font-size: 2.5rem;
+                      }
+
+                      @include res(vtab) {
+                        font-size: 2rem;
+                      }
+                }
+    
+                &__desc {
+                    font-size: 1.6rem;
+                    text-align: justify;
+                }
+            }
+        }
+        
+    }
+}
+
+// Components
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.card {
+    font-family: 'Roboto', sans-serif;
+    &__heading {
+        font-size: 2.5rem;
+    }
+
+    &__list {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+
+

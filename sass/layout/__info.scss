@@ -1,0 +1,109 @@
+.info {
+    margin-top: -25vh;
+    padding: 40vh 0;
+    width: 100%;
+    background-color: $color-white;  
+    text-align: center;
+
+    &__img {
+        position: relative;
+        display: block;
+        width: 30rem;
+        height: 30rem;
+        margin: 0 auto;
+        box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba($color-black, 0.3);
+        transition: all .3s;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        @include res(mobile) {
+            width: 20rem;
+            height: 20rem;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: -5%;
+            left: -5%;
+            width: 100%;
+            height: 100%;
+            border: solid 0.5rem $color-sec;
+            transition: all .3s;
+        }
+
+        &:hover:before {
+            top: 5%;
+            left: 5%;
+            transform: skewX(0deg) rotate(90deg);
+            
+        }
+
+        &:hover {
+            filter: brightness(1.07);
+            transform: scale(1.03);
+        }
+    }
+
+    &__heading {
+        display: inline-block;
+        margin: 3rem 0;
+        color: $color-pri;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        @include res(vtab) {
+            flex-direction: column;
+        }
+
+        .textbox {
+            flex: 0 0 30%;
+
+            @include res(vtab) {
+                width: 60%;
+                margin-left: 20%;
+            }
+           
+            &__heading {
+                display: inline-block;
+                position: relative;
+                margin-bottom: 2rem;
+                z-index: 0;
+
+                @include res(vtab) {
+                    margin-top: 2rem;
+                }
+
+                &--2 {
+                    @include res(vtab) {
+                        margin-top: 7rem;
+                    }
+                }
+
+                &:before {
+                    position: absolute;
+                    bottom: 0%;
+                    left: -10%;
+                    background-color: $color-sec-light;
+                    content: "";
+                    width: 120%;
+                    height: 50%;
+                    border-radius: 8px;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+        
+
+
+}

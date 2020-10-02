@@ -1,0 +1,81 @@
+.edu {
+    position: relative;
+    margin-top: -25vh;
+    width: 100%;
+    z-index: 100;
+    &__cards {
+        height: 100rem;
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+        background-blend-mode: multiply;
+        background-image: linear-gradient(to right bottom, $color-pri-very-light, $color-pri-very-light),
+                          url('../../images/laptop.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        @include res(vtab) {
+            background-image: none;
+            background-color: $color-pri-very-light;
+            height: auto;
+            flex-direction: column;
+            padding: 30rem 0;
+            justify-content: center;
+        }
+    }
+
+    &__technologies {
+        text-align: center;
+
+        h3 {
+            position: relative;
+            display: inline-block;
+            font-size: 3rem;
+            margin: 3rem 0;
+            padding: 1.5rem 4rem;;
+            background-color: $color-pri;
+            color: white;
+
+            &:before {
+                content: "";
+                position: absolute;
+                display: block;
+                top: -15%;
+                left: -5%;
+                width: 100%;
+                height: 100%;
+                border: solid 0.4rem $color-sec;
+                transition: all .3s;
+                transform: skewX(6deg);
+            }
+            
+        }
+        .techbox {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: $color-sec-light;
+            padding: 3rem 1rem;
+            padding-top: 40rem;
+            margin-top: -38rem;
+
+            img {
+               width: 15rem;
+               border-radius: 1.2rem;
+               padding: 1rem;
+               box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba($color-black, 0.3);
+               transition: all 0.2s ease-in;
+               background-color: white;
+
+               @include res(vtab) {
+                    width: 10rem;
+                }
+
+                @include res(mobile) {
+                    width: 6rem;
+                }
+            }
+        }
+    }
+}

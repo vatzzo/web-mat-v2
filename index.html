@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mateusz Łata</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <nav class="navigation">
+            <ul class="navigation__options">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>  
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="navigation__background"></div>
+            <div class="navigation__burger">
+              <div class="bars-container">
+                <div class="bars bars--top"></div>
+                <div class="bars bars--middle"></div>
+                <div class="bars bars--bottom"></div>
+              </div>
+            </div>
+        </nav>
+
+        <header id="home" class="header">
+              <div class="header__img">
+                <img src="images/main-img-1300-min.png"
+                     srcset="
+                            images/main-img-800-min.png 800w,
+                            images/main-img-1300-min.png 1300w"
+                     alt="Me"/>
+              </div>
+              <div class="header__text">
+                <h1 class="header__text--name">Mateusz Łata</h1>
+                <h2 class="header__text--prof">Junior Web Developer</h2>
+                <a href="#about" class="btn btn--sec">
+              Get to know me</a>
+            </div>
+        </header>
+
+        <main id="about" class="about">
+            <section class="info">
+                    <div class="info__img">
+                        <img src="images/info-img-1800-min.jpg"
+                             srcset="
+                                    images/info-img-800-min.jpg 800w,
+                                    images/info-img-1800-min.jpg 1800w"
+                             />
+                    </div>
+                    <h1 class="info__heading">
+                      Hi, I'm Mateusz!
+                    </h1>
+                     <div class="info__text">
+                        <div class="textbox">
+                          <h2 class="textbox__heading textbox__heading--1">
+                            About me
+                          </h2>
+                          <p class="textbox__content">
+                            I'm a junior web designer, developer and a student of 5th year of Applied Computer Science at AGH University. 
+                            Currently I live in Warsaw, where I develop my skills and look towards new challenges and nice environment 
+                            to grow into professionalist. I am trying to use my innate curiosity to do what motivates me the most - 
+                            acquiring knowledge and widening my personal horizons.
+                          </p>
+                        </div>
+                        <div class="textbox">
+                          <h2 class="textbox__heading textbox__heading--2">
+                            Why do I love to do it ?
+                          </h2>
+                          <p class="textbox__content">
+                            I love to have a contact with people around me. These days a well
+                            designed website is a must for each subject that wants to have a
+                            wonderful relationship with their customers on a daily basis.
+                            Through the graphical interfaces this goal can be reached. I am
+                            satisfied when a person likes a page so much that he or she come
+                            back over and over to meet with that design and feelings again.
+                          </p>
+                        </div>
+                     </div>
+            </section>
+
+            <section class="edu">
+              <div class="edu__cards">
+                <div class="card">
+                  <svg class="card__icon">
+                    <use xlink:href="images/sprite.svg#icon-education"></use>
+                  </svg>
+                  <h4 class="card__heading">Education</h4>
+                  <ul class="card__list">
+                    <h5>
+                      Bachelor's degree:
+                    </h5>
+                    <li>
+                      <b>Mechatronic Engineering</b> (in English) &rarr; 2016 - 2020
+                    </li>
+                    <h5>
+                      Master degree:
+                    </h5>
+                    <li><b>Applied Computer Science</b> &rarr; 2020 - 2021</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <svg class="card__icon">
+                    <use xlink:href="images/sprite.svg#icon-checkmark-outline"></use>
+                  </svg>
+                  <h4 class="card__heading">Skills</h4>
+                  <ul class="card__list">
+                    <li>team player</li>
+                    <li>communicative</li>
+                    <li>collaborative</li>
+                    <li>active listener</li>
+                    <li>hard working</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <svg class="card__icon">
+                    <use xlink:href="images/sprite.svg#icon-globe"></use>
+                  </svg>
+                  <h4 class="card__heading">Languages</h4>
+                  <ul class="card__list">
+                    <li>Polish - native</li>
+                    <li>English - C1</li>
+                  </ul>
+                </div>
+              </div>
+      
+              <div class="edu__technologies">
+                <h3>
+                  My tech stack
+                </h3>
+                <div class="techbox">
+                  <img src="./images/tech/html.png" alt="" />
+                  <img src="./images/tech/css.png" alt="" />
+                  <img src="./images/tech/js.png" alt="" />
+                  <img src="./images/tech/sass.png" alt="" />
+                  <img src="./images/tech/angular.png" alt="" />
+                </div>
+              </div>
+            </section>
+
+            <section class="hobbies">
+              <h3 class="hobbies__heading">
+                Hobbies
+              </h3>
+              <div class="hobbies__phone"></div>
+              <div class="pictures">
+                <div class="picture-box picture-box--1">
+                  <h5 class="picture-box__heading">travelling</h5>
+                </div>
+                <div class="picture-box picture-box--2">
+                  <h5 class="picture-box__heading">sport</h5>
+                </div>
+                <div class="picture-box picture-box--3">
+                  <h5 class="picture-box__heading">adventures</h5>
+                </div>
+                <div class="picture-box picture-box--4">
+                  <h5 class="picture-box__heading">socializing</h5>
+                </div>
+              </div>
+            </section>
+
+            <section class="portfolio">
+              <div class="portfolio__heading">Portfolio</div>
+              <div class="portfolio__showcase">
+
+                <div class="item">
+                    <img src="./images/projects/cmt.png" alt="Cook me though">
+                    <div class="textbox">
+                      <h3 class="textbox__title">Cook me though</h3>
+                      <div class="textbox__desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut dolorem at illum doloremque veritatis beatae laudantium aspernatur similique? Cumque reprehenderit dolore magnam, eveniet quia possimus modi. Velit, inventore impedit.</p></div>
+                    </div>
+                </div>
+
+                <div class="item">
+                  <img src="./images/projects/wod.png" alt="War of dices">
+                  <div class="textbox">
+                    <h3 class="textbox__title">War of dices</h3>
+                    <div class="textbox__desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut dolorem at illum doloremque veritatis beatae laudantium aspernatur similique? Cumque reprehenderit dolore magnam, eveniet quia possimus modi. Velit, inventore impedit.</p></div>
+                  </div>
+                 </div>
+
+                 <div class="item">
+                  <img src="./images/projects/tc.png" alt="Typing Contest">
+                  <div class="textbox">
+                    <h3 class="textbox__title">Typing Contest</h3>
+                    <div class="textbox__desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut dolorem at illum doloremque veritatis beatae laudantium aspernatur similique? Cumque reprehenderit dolore magnam, eveniet quia possimus modi. Velit, inventore impedit.</p></div>
+                  </div>
+                 </div>
+
+                 <div class="item">
+                  <img src="./images/projects/wb.png" alt="Cook me though">
+                  <div class="textbox">
+                    <h3 class="textbox__title">Words Beast</h3>
+                    <div class="textbox__desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut dolorem at illum doloremque veritatis beatae laudantium aspernatur similique? Cumque reprehenderit dolore magnam, eveniet quia possimus modi. Velit, inventore impedit.</p></div>
+                  </div>
+                 </div>
+
+              </div>
+            </section>
+
+
+            
+        </main>
+ 
+        
+        <script src="js/main.js" async defer></script>
+    </body>
+</html>
