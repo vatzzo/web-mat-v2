@@ -1,0 +1,23 @@
+.underline {
+    position: relative;
+    display: inline-block;
+    padding: 0 0.2rem;
+    z-index: 0;
+    color: $color-black;
+    
+    &:before {
+        @include underline($color-sec-light);
+    }
+  }
+
+  .underline-white {
+    position: relative;
+    display: inline-block;
+    padding: 0 0.2rem;
+    z-index: 0;
+    color: $color-black;
+    
+    &:before {
+        @include underline(white);
+    }
+  }

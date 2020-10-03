@@ -120,7 +120,11 @@
             position: absolute;
             top: 50%;
             left: 0;
+            visibility: visible;
+            opacity: 1;
             transform: translateY(-50%);
+            transition: opacity .6s;
+            transition-delay: .4s;
           }
   
           &--bottom {
@@ -130,7 +134,8 @@
           }
   
           &-toggled--middle {
-            display: none;
+            visibility: hidden;
+            opacity: 0;
           }
   
           &-toggled--top {

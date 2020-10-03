@@ -3,6 +3,7 @@
     background-color: $color-pri-very-light;
     text-align: center;
     margin-top: -24rem;
+    padding-bottom: 10rem;
 
     &__heading {
             position: relative;
@@ -12,6 +13,7 @@
             padding: 1.5rem 4rem;;
             background-color: $color-pri;
             color: white;
+            border-radius: 4px;
 
             &:before {
                 content: "";
@@ -23,7 +25,7 @@
                 height: 100%;
                 border: solid 0.4rem $color-sec;
                 transition: all .3s;
-                transform: skewX(6deg);
+                border-radius: 4px;
             }
     }
 
@@ -33,6 +35,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 6rem;
 
         .item {
           position: relative;
@@ -42,9 +45,9 @@
           height: 40rem;
           margin: 6rem 0;
           background-color: $color-pri;
-          box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba($color-black, 0.5);
           transition: all .3s;
-          
+          border-radius: 0.5rem;       
+          @include shadow-light;    
 
           @include res(vtab) {
             width: 80%;
@@ -53,80 +56,77 @@
             height: auto;
             border-radius: 12px;
             overflow: hidden;
-            border-bottom: white 1rem solid;
+            border-bottom: $color-pri-light 1rem solid;
+            background-color: $color-white;
           }
 
-          &:hover {
-              transform: scale(1.05);
+          &:hover img{
+              transform: scale(1.09);
           }
-          &:hover img {
-            transform: skewX(0);
-            
-          }
-
-          &:hover .textbox__desc {
-            outline-offset: 1rem;
-            outline-color: rgba(white, 1);
-          }
-
-          &:hover .textbox__title {
-              top: 10%;
-              left: 10%;
-              transform: rotate(360deg) scale(1.05);
-          }
-
-      
-
-            img {
+          
+          &__img {
                 position: absolute;
-                right: -5%;
+                right: 0;
                 top: 0;
                 height: inherit;
                 width: auto;
-                transform: skewX(-8deg);
                 transition: all .3s;
                 cursor: pointer;
-                border-left: 2rem solid $color-white;
-
-                &:hover {
-                    filter: brightness(0.8);
-                }
-
-                @include res(htab) {
-                    transform: skew(0);
-                    width: 80%;
-                    height: auto;
-                    right: 10%;
-                    border-left: none;
-                }
-
+                overflow: hidden;
+                border-top-right-radius: 0.5rem;  
+                border-bottom-right-radius: 0.5rem; 
                 @include res(vtab) {
-                    width: 100%;
-                    height: auto;
-                    position: static;
-                    margin: 0 auto;
+                    position: relative;
                 }
-  
-            
-            }
+
+
+                img {
+                    width: auto;
+                    height: 100%;
+                    transition: all 1s;
+
+                    &:hover {
+                        filter: brightness(0.8);
+                    }
+    
+                    @include res(htab) {
+                        width: auto;
+                        width: 80%;
+                        height: auto;
+                        right: 10%;
+                        border-left: none;
+                    }
+    
+                    @include res(vtab) {
+                        width: 100%;
+                        height: auto;
+                        position: static;
+                        margin: 0 auto;
+                    }
+                }
+          }
 
             .textbox {     
 
                 &__title {
                     position: absolute;
-                    top: 2rem;
-                    left: 2rem;
+                    top: 7%;
+                    left: 7%;
+                    border-radius: 0.5rem;
                     background-color: $color-sec;
                     display: inline-block;
                     padding: 1rem 2rem;
                     color: white;
                     margin-bottom: 1rem;
                     transition: all .3s ease-in-out;
+                    border: solid 0.3rem white;
                    
                     @include res(vtab) {
+                        position: absolute;
+                        top: 5%;
+                        left: 50%;
+                        transform: translateX(-50%);
                         background-color: $color-pri;
-                        border-radius: 15px;
-                        border: solid 0.5rem white;
                     }
                 }
     
@@ -134,41 +134,34 @@
                     position: absolute;
                     bottom: 50%;
                     left: -5%;
-                    transform: translateY(50%) skew(8deg);
+                    transform: translateY(50%);
                     padding: 2rem 5rem;
                     width: 55%;
                     max-height: 50%;
-                    background-color: rgba($color-pri-very-light, 0.9);
                     text-align: left;
                     overflow: hidden;
-                    outline: 0.5rem solid rgba(white, 0.3);
-                    outline-offset: 0rem;
-                    transition: all .3s ease-out;
-                    transition-delay: .6s;
+                    background-color: $color-white;
+                    border-radius: 4px;
+                    border: solid 0.2rem rgba($color-black, 0.2);
 
                     @include res(htab) {
-                        width: 80%;
-                        bottom: 0%;
-                        left: 10%;
-                        background: $color-white;
+                        left: 7%;
+                        bottom: 7%;
+                        transform: translateY(0);
                     }
 
                     @include res(vtab) {
                         position: static;
-                        outline: none;
-                        transform: skewX(0);
                         width: 100%;
-                        background-color: $color-pri;
-                        color: white;
+                        border: none;
+                        border-radius: 0;
+                        background: none;
+                        text-align: justify;
                     }
 
-                    p {
-                        transform: skewX(-8deg);
-                        @include res(vtab) {
-                            transform: skewX(0);
-                        }
+                
                         
-                    }
+                    
                 }
             }
 

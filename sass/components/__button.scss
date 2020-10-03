@@ -1,5 +1,6 @@
 .btn {
     transition: all 0.3s;
+    border-radius: 4rem;
   
     &:link,
     &:visited {
@@ -28,6 +29,7 @@
       z-index: -1;
       transition: all 0.4s;
       background-color: $color-white;
+      border-radius: 4rem;
     }
     
   

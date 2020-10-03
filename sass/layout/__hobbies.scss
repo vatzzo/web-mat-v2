@@ -15,6 +15,7 @@
         padding: 1.5rem 4rem;;
         background-color: $color-pri;
         color: white;
+        border-radius: 4px;
 
         &:before {
             content: "";
@@ -26,7 +27,7 @@
             height: 100%;
             border: solid 0.4rem $color-sec;
             transition: all .3s;
-            transform: skewX(6deg);
+            border-radius: 4px;
         }
     }
 
@@ -80,7 +81,7 @@
         &__heading {
             background-color: $color-sec;
             padding: 0.5rem 2rem;
-            border-radius: 2px;
+            border-radius: 4rem;
             display: inline-block;
         }
 

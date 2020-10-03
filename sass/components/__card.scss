@@ -24,28 +24,21 @@
     &__heading {
       position: relative;
       z-index: 0;
+      padding: 0 1rem;
       color: white;
 
-      &::after {
-          position: absolute;
-          bottom: 0;
-          left: -10%;
-          content: "";
-          width: 120%;
-          height: 50%;
-          border-radius: 8px;
-          z-index: -1;
-          background-color: $color-sec;
+      &::before {
+        @include underline($color-sec);
       }
     }
 
     &__icon {
         fill: $color-sec;
-        width: 12rem;
+        width: 10rem;
         margin-top: 1rem;
 
         @include res(vtab) {
-          width: 10rem;
+          width: 8  rem;
           margin-top: 0rem;
         }
     }
@@ -54,6 +47,10 @@
       flex: 0 1 50%;
       width: 90%;
       padding: 1rem;
+
+      h5 {
+        opacity: 0.7;
+      }
 
       @include res(vtab) {
         flex: 0 1 60%;

@@ -1,0 +1,106 @@
+.contact {
+    width: 100%;
+    padding-top: 20rem;
+    margin-top: -15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-sec-light;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+
+    &__heading {
+        @include section-header;
+    }
+
+    &__msg {
+        color: rgba($color-black, 0.7);
+        margin-top: 3rem;
+        padding: 0 5rem;
+        text-align: justify;
+    }
+
+    &__info {
+        margin: 6rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .textbox {
+            min-width: 35rem;
+            border-radius: 5rem;
+            margin: 1.2rem 0;
+            display: flex;
+            align-items: center;
+            background-color: $color-white;
+
+            &:hover .textbox__icon{
+                border-color: $color-sec;
+            }
+
+            &:hover .textbox__data {
+                opacity: 1;
+            }
+
+            @include res(htab) {
+                min-width: 30rem;
+            }
+
+            &:nth-child(2n) {
+                margin-left: 8rem;
+            }
+
+            &:nth-child(2n + 1) {
+                margin-right:  8rem;
+            }
+
+            &__icon {
+                width: 6rem;
+                height: 6rem;
+                border: solid 0.8rem $color-sec-light;
+                padding: 1.5rem;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: $color-pri-light;
+                margin-right: 2rem;
+                transition: all .3s;
+
+                svg {
+                    fill: white;
+                    width: 100%;
+                    height: 100%;
+                }
+                
+            }
+
+            &__data {
+                transition: all .4s;
+                &--1 {
+                    opacity: 0.5;
+                }
+
+                &--2 {
+                    opacity: 0.5;
+                }
+
+                &--3 {
+                    opacity: 0.5;
+                }
+
+                &--4 {
+                    font-weight: bold;
+                    color: $color-sec;
+                    span {
+                        
+                        opacity: 0.4;
+                    }
+                }
+
+                &--5 {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
