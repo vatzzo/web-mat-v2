@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
 
@@ -48,18 +49,18 @@
 
         <main id="about" class="about">
             <section class="info">
-                    <div class="info__img">
+                    <div class="info__img" data-aos="fade-up" >
                         <img src="images/info-img-1800-min.jpg"
                              srcset="
                                     images/info-img-800-min.jpg 800w,
                                     images/info-img-1800-min.jpg 1800w"
                              />
                     </div>
-                    <h1 class="info__heading">
+                    <h1 class="info__heading" data-aos="fade-up" >
                       Hi, I'm Mateusz!
                     </h1>
                      <div class="info__text">
-                        <div class="textbox">
+                        <div class="textbox" data-aos="fade-right" data-aos-delay="500">
                           <h2 class="textbox__heading textbox__heading--1">
                             About me
                           </h2>
@@ -70,7 +71,7 @@
                             acquiring knowledge and widening my personal horizons.
                           </p>
                         </div>
-                        <div class="textbox">
+                        <div class="textbox" data-aos="fade-left" data-aos-delay="500">
                           <h2 class="textbox__heading textbox__heading--2">
                             Why do I love to do it ?
                           </h2>
@@ -88,7 +89,7 @@
 
             <section class="edu">
               <div class="edu__cards">
-                <div class="card">
+                <div class="card" data-aos="fade-down-right">
                   <svg class="card__icon">
                     <use xlink:href="images/sprite.svg#icon-education"></use>
                   </svg>
@@ -106,7 +107,7 @@
                     <li><b>Applied Computer Science</b> &rarr; 2020 - 2021</li>
                   </ul>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-down-right" data-aos-delay="300">
                   <svg class="card__icon">
                     <use xlink:href="images/sprite.svg#icon-checkmark-outline"></use>
                   </svg>
@@ -119,7 +120,7 @@
                     <li>hard working</li>
                   </ul>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-down-right" data-aos-delay="600">
                   <svg class="card__icon">
                     <use xlink:href="images/sprite.svg#icon-globe"></use>
                   </svg>
@@ -132,45 +133,45 @@
               </div>
       
               <div class="edu__technologies">
-                <h3>
+                <h3 data-aos="fade-up">
                   My tech stack
                 </h3>
                 <div class="techbox">
-                  <img src="./images/tech/html.png" alt="" />
-                  <img src="./images/tech/css.png" alt="" />
-                  <img src="./images/tech/js.png" alt="" />
-                  <img src="./images/tech/sass.png" alt="" />
-                  <img src="./images/tech/angular.png" alt="" />
+                  <img src="./images/tech/html.png" alt="" data-aos="zoom-in" data-aos-delay="200"/>
+                  <img src="./images/tech/css.png" alt="" data-aos="zoom-in" data-aos-delay="200"/>
+                  <img src="./images/tech/js.png" alt="" data-aos="zoom-in" data-aos-delay="200"/>
+                  <img src="./images/tech/sass.png" alt="" data-aos="zoom-in" data-aos-delay="200"/>
+                  <img src="./images/tech/angular.png" alt="" data-aos="zoom-in" data-aos-delay="200"/>
                 </div>
               </div>
             </section>
 
             <section class="hobbies">
-              <h3 class="hobbies__heading">
+              <h3 class="hobbies__heading" data-aos="fade-up">
                 Hobbies
               </h3>
               <div class="hobbies__phone"></div>
               <div class="pictures">
-                <div class="picture-box picture-box--1">
+                <div class="picture-box picture-box--1" data-aos="zoom-out" data-aos-delay="100">
                   <h5 class="picture-box__heading">travelling</h5>
                 </div>
-                <div class="picture-box picture-box--2">
+                <div class="picture-box picture-box--2" data-aos="zoom-out" data-aos-delay="100">
                   <h5 class="picture-box__heading">sport</h5>
                 </div>
-                <div class="picture-box picture-box--3">
+                <div class="picture-box picture-box--3" data-aos="zoom-out" data-aos-delay="100">
                   <h5 class="picture-box__heading">adventures</h5>
                 </div>
-                <div class="picture-box picture-box--4">
+                <div class="picture-box picture-box--4" data-aos="zoom-out" data-aos-delay="100">
                   <h5 class="picture-box__heading">socializing</h5>
                 </div>
               </div>
             </section>
 
             <section id="portfolio" class="portfolio">
-              <div class="portfolio__heading">Portfolio</div>
+              <div class="portfolio__heading" data-aos="fade-up">Portfolio</div>
               <div class="portfolio__showcase">
 
-                <div class="item">
+                <div class="item" data-aos="fade-down-left">
                   <div class="item__img">
                     <img src="./images/projects/cmt.png" alt="Cook me though">
                   </div>
@@ -180,7 +181,7 @@
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="item" data-aos="fade-down-right">
                   <div class="item__img">
                     <img src="./images/projects/wod.png" alt="War of dices">
                   </div>
@@ -190,7 +191,7 @@
                   </div>
                  </div>
 
-                 <div class="item">
+                 <div class="item" data-aos="fade-down-left">
                    <div class="item__img">
                     <img src="./images/projects/tc.png" alt="Typing Contest">
                   </div>
@@ -200,7 +201,7 @@
                   </div>
                  </div>
 
-                 <div class="item">
+                 <div class="item" data-aos="fade-down-right">
                    <div class="item__img">
                     <img src="./images/projects/wb.png" alt="Cook me though">
                   </div>
@@ -213,9 +214,9 @@
             </section>
 
             <section id="contact" class="contact">
-              <h3 class="contact__heading">Contact</h3>
-              <p class="contact__msg">I'm always open to <b class="underline-white">partnerships</b> and <b class="underline-white">collaboration.</b> Contact me at any time.</p>
-              <div class="contact__info">
+              <h3 class="contact__heading" data-aos="fade-up">Contact</h3>
+              <p class="contact__msg" data-aos="fade-up" data-aos-delay="200">I'm always open to <b class="underline-white">partnerships</b> and <b class="underline-white">collaboration.</b> Contact me at any time.</p>
+              <div class="contact__info" data-aos="fade-up" data-aos-delay="200">
 
                 <div class="textbox">
                   <div class="textbox__icon">
@@ -279,5 +280,7 @@
         </div>
 
         <script src="js/main.js" async defer></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
     </body>
 </html>
