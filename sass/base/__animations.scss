@@ -61,3 +61,28 @@
       transform: translateY(0);
     }
   }
+
+  // Loader
+  @keyframes ball-jump {
+    0% {
+      transform: translateY(0rem);
+    }
+
+    25% {
+      transform: translateY(1.5rem) scale(0.2);
+      background-color: $color-sec-light;
+    }
+
+    50% {
+      transform: translateY(0rem) scale(1);
+    }
+
+    75% {
+      transform: translateY(-1.5rem);
+      background-color: $color-sec-light;
+    }
+
+    100% {
+      transform: translateY(0rem);
+    }
+  }

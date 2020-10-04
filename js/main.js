@@ -6,6 +6,8 @@ const navigation = {
     optionsItems: document.querySelectorAll(".navigation__options li")
 }
 
+const loader = document.querySelector('.loader');
+
 navigation.button.addEventListener("click", () => {
   // Change to 'X'
   navigation.bars[0].classList.toggle("bars-toggled--top");
@@ -32,3 +34,17 @@ navigation.optionsItems.forEach((item) => {
     navigation.options.classList.remove("navigation__options--active");
   });
 });
+
+// Loader
+
+window.addEventListener('load',() => {
+  
+  setTimeout(() => {
+    loader.classList.add('loader--onload');
+    setTimeout(() => { 
+      document.body.removeChild(loader);
+      loader.classList.remove('loader--onload'); 
+    }, 1000);
+  }, 2000);
+})
+

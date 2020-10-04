@@ -214,6 +214,20 @@ body {
   100% {
     transform: translateY(0); } }
 
+@keyframes ball-jump {
+  0% {
+    transform: translateY(0rem); }
+  25% {
+    transform: translateY(1.5rem) scale(0.2);
+    background-color: #ffe8f0; }
+  50% {
+    transform: translateY(0rem) scale(1); }
+  75% {
+    transform: translateY(-1.5rem);
+    background-color: #ffe8f0; }
+  100% {
+    transform: translateY(0rem); } }
+
 .btn {
   transition: all 0.3s;
   border-radius: 4rem; }
@@ -308,6 +322,44 @@ body {
       margin-bottom: 0.3rem; }
   .card:hover {
     transform: scale(1.03); }
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #393f4d, #36373d);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s; }
+  .loader--onload {
+    transform: scale(20);
+    opacity: 0; }
+  .loader__container {
+    width: 30rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .loader__container .ball {
+      width: 1.3rem;
+      height: 1.3rem;
+      border: solid 0.3rem white;
+      margin: 0 0.15rem;
+      border-radius: 50%; }
+      .loader__container .ball--1 {
+        animation: ball-jump 1s linear 0s infinite; }
+      .loader__container .ball--2 {
+        animation: ball-jump 1s linear 0.15s infinite; }
+      .loader__container .ball--3 {
+        animation: ball-jump 1s linear 0.3s infinite; }
+      .loader__container .ball--4 {
+        animation: ball-jump 1s linear 0.45s infinite; }
+      .loader__container .ball--5 {
+        animation: ball-jump 1s linear 0.6s infinite; }
 
 .navigation__options {
   position: fixed;
@@ -423,7 +475,7 @@ body {
 
 .navigation__background {
   position: relative;
-  background-color: #585f72;
+  background-color: #393f4d;
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
@@ -937,11 +989,12 @@ body {
         border: solid 0.3rem white; }
         @media (max-width: 900px) {
           .portfolio__showcase .item .textbox__title {
-            position: absolute;
-            top: 5%;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #393f4d; } }
+            position: static;
+            background: none;
+            border: none;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            color: #36373d; } }
       .portfolio__showcase .item .textbox__desc {
         position: absolute;
         bottom: 50%;
@@ -967,7 +1020,8 @@ body {
             border: none;
             border-radius: 0;
             background: none;
-            text-align: justify; } }
+            text-align: justify;
+            padding-top: 0; } }
 
 .contact {
   width: 100%;
