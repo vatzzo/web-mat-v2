@@ -49,18 +49,19 @@
 
         <main id="about" class="about">
             <section class="info">
-                    <div class="info__img" data-aos="fade-up" >
+              <div class="animation-wraper" data-aos="fade-up">
+                    <div class="info__img"  >
                         <img src="images/info-img-1800-min.jpg"
                              srcset="
                                     images/info-img-800-min.jpg 800w,
                                     images/info-img-1800-min.jpg 1800w"
                              />
                     </div>
-                    <h1 class="info__heading" data-aos="fade-up" >
+                    <h1 class="info__heading">
                       Hi, I'm Mateusz!
                     </h1>
                      <div class="info__text">
-                        <div class="textbox" data-aos="fade-right">
+                        <div class="textbox">
                           <h2 class="textbox__heading textbox__heading--1">
                             About me
                           </h2>
@@ -71,7 +72,7 @@
                             acquiring knowledge and widening my personal horizons.
                           </p>
                         </div>
-                        <div class="textbox" data-aos="fade-left">
+                        <div class="textbox">
                           <h2 class="textbox__heading textbox__heading--2">
                             Why do I love to do it ?
                           </h2>
@@ -85,11 +86,12 @@
                           </p>
                         </div>
                      </div>
+                    </div>
             </section>
 
             <section class="edu">
               <div class="edu__cards">
-                <div class="card" data-aos="fade-down-right">
+                <div class="card" data-aos="fade-up">
                   <svg class="card__icon">
                     <use xlink:href="images/sprite.svg#icon-education"></use>
                   </svg>
@@ -107,7 +109,7 @@
                     <li><b>Applied Computer Science</b> &rarr; 2020 - 2021</li>
                   </ul>
                 </div>
-                <div class="card" data-aos="fade-down-right">
+                <div class="card" data-aos="fade-up">
                   <svg class="card__icon">
                     <use xlink:href="images/sprite.svg#icon-checkmark-outline"></use>
                   </svg>
@@ -120,7 +122,7 @@
                     <li>hard working</li>
                   </ul>
                 </div>
-                <div class="card" data-aos="fade-down-right">
+                <div class="card" data-aos="fade-up">
                   <svg class="card__icon">
                     <use xlink:href="images/sprite.svg#icon-globe"></use>
                   </svg>
@@ -133,37 +135,18 @@
               </div>
       
               <div class="edu__technologies">
-                <h3 data-aos="fade-up">
-                  My tech stack
-                </h3>
-                <div class="techbox">
-                  <img src="./images/tech/html.png" alt="" data-aos="zoom-in"/>
-                  <img src="./images/tech/css.png" alt="" data-aos="zoom-in"/>
-                  <img src="./images/tech/js.png" alt="" data-aos="zoom-in"/>
-                  <img src="./images/tech/sass.png" alt="" data-aos="zoom-in"/>
-                  <img src="./images/tech/angular.png" alt="" data-aos="zoom-in"/>
-                </div>
-              </div>
-            </section>
-
-            <section class="hobbies">
-              <h3 class="hobbies__heading" data-aos="fade-up">
-                Hobbies
-              </h3>
-              <div class="hobbies__phone"></div>
-              <div class="pictures">
-                <div class="picture-box picture-box--1" data-aos="zoom-out">
-                  <h5 class="picture-box__heading">travelling</h5>
-                </div>
-                <div class="picture-box picture-box--2" data-aos="zoom-out">
-                  <h5 class="picture-box__heading">sport</h5>
-                </div>
-                <div class="picture-box picture-box--3" data-aos="zoom-out">
-                  <h5 class="picture-box__heading">adventures</h5>
-                </div>
-                <div class="picture-box picture-box--4" data-aos="zoom-out">
-                  <h5 class="picture-box__heading">socializing</h5>
-                </div>
+                <div class="animation-wraper" data-aos="fade-up">
+                    <h3>
+                      My tech stack
+                    </h3>
+                    <div class="techbox">
+                      <img src="./images/tech/html.png" alt=""/>
+                      <img src="./images/tech/css.png" alt=""/>
+                      <img src="./images/tech/js.png" alt=""/>
+                      <img src="./images/tech/sass.png" alt=""/>
+                      <img src="./images/tech/angular.png" alt=""/>
+                    </div>
+                </div>    
               </div>
             </section>
 
@@ -171,7 +154,7 @@
               <div class="portfolio__heading" data-aos="fade-up">Portfolio</div>
               <div class="portfolio__showcase">
 
-                <div class="item" data-aos="fade-down-left">
+                <div class="item" data-aos="fade-up">
                   <div class="item__img">
                     <img src="./images/projects/cmt.png" alt="Cook me though">
                   </div>
@@ -181,7 +164,7 @@
                     </div>
                 </div>
 
-                <div class="item" data-aos="fade-down-right">
+                <div class="item" data-aos="fade-up">
                   <div class="item__img">
                     <img src="./images/projects/wod.png" alt="War of dices">
                   </div>
@@ -191,7 +174,7 @@
                   </div>
                  </div>
 
-                 <div class="item" data-aos="fade-down-left">
+                 <div class="item" data-aos="fade-up">
                    <div class="item__img">
                     <img src="./images/projects/tc.png" alt="Typing Contest">
                   </div>
@@ -201,7 +184,7 @@
                   </div>
                  </div>
 
-                 <div class="item" data-aos="fade-down-right">
+                 <div class="item" data-aos="fade-up">
                    <div class="item__img">
                     <img src="./images/projects/wb.png" alt="Cook me though">
                   </div>
@@ -213,56 +196,81 @@
               </div>
             </section>
 
-            <section id="contact" class="contact">
-              <h3 class="contact__heading" data-aos="fade-up">Contact</h3>
-              <p class="contact__msg" data-aos="fade-up">I'm always open to <b class="underline-white">partnerships</b> and <b class="underline-white">collaboration.</b> Contact me at any time.</p>
-              <div class="contact__info" data-aos="fade-up">
-
-                <div class="textbox">
-                  <div class="textbox__icon">
-                    <svg>
-                      <use xlink:href="images/sprite.svg#icon-user"></use>
-                    </svg>
+            <section class="hobbies">
+              <div class="hobbies__container"  data-aos="fade-up">
+                  <h3 class="hobbies__heading" >
+                    Hobbies
+                  </h3>
+                  <div class="hobbies__phone"></div>
+                  <div class="pictures">
+                    <div class="picture-box picture-box--1">
+                      <h5 class="picture-box__heading">travelling</h5>
+                    </div>
+                    <div class="picture-box picture-box--2">
+                      <h5 class="picture-box__heading">sport</h5>
+                    </div>
+                    <div class="picture-box picture-box--3">
+                      <h5 class="picture-box__heading">adventures</h5>
+                    </div>
+                    <div class="picture-box picture-box--4">
+                      <h5 class="picture-box__heading">socializing</h5>
+                    </div>
                   </div>
-                  <p class="textbox__data textbox__data--1">Mateusz Łata</p>
-                </div>
-
-                <div class="textbox">
-                  <div class="textbox__icon">
-                    <svg>
-                      <use xlink:href="images/sprite.svg#icon-time"></use>
-                    </svg>
-                  </div>
-                  <p class="textbox__data textbox__data--2">16.03.1997</p>
-                </div>
-
-                <div class="textbox">
-                  <div class="textbox__icon">
-                    <svg>
-                      <use xlink:href="images/sprite.svg#icon-home"></use>
-                    </svg>
-                  </div>
-                  <p class="textbox__data textbox__data--3">Warszawa</p>
-                </div>
-
-                <div class="textbox">
-                  <div class="textbox__icon">
-                    <svg>
-                      <use xlink:href="images/sprite.svg#icon-phone"></use>
-                    </svg>
-                  </div>
-                  <p class="textbox__data textbox__data--4"><span>+48</span> 666 383 454</p>
-                </div>
-
-                <div class="textbox">
-                  <div class="textbox__icon">
-                    <svg>
-                      <use xlink:href="images/sprite.svg#icon-envelope"></use>
-                    </svg>
-                  </div>
-                  <p class="textbox__data textbox__data--5">mateuszlata2@gmail.com</p>
                 </div>
               </div>
+            </section>
+
+            <section id="contact" class="contact">
+              <div class="container" data-aos="fade-up">
+                <h3 class="contact__heading">Contact</h3>
+                <p class="contact__msg">I'm always open to <b class="underline-white">partnerships</b> and <b class="underline-white">collaboration.</b> Contact me at any time.</p>
+                <div class="contact__info">
+                  <div class="textbox">
+                    <div class="textbox__icon">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-user"></use>
+                      </svg>
+                    </div>
+                    <p class="textbox__data textbox__data--1">Mateusz Łata</p>
+                  </div>
+
+                  <div class="textbox">
+                    <div class="textbox__icon">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-time"></use>
+                      </svg>
+                    </div>
+                    <p class="textbox__data textbox__data--2">16.03.1997</p>
+                  </div>
+
+                  <div class="textbox">
+                    <div class="textbox__icon">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-home"></use>
+                      </svg>
+                    </div>
+                    <p class="textbox__data textbox__data--3">Warszawa</p>
+                  </div>
+
+                  <div class="textbox">
+                    <div class="textbox__icon">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-phone"></use>
+                      </svg>
+                    </div>
+                    <p class="textbox__data textbox__data--4"><span>+48</span> 666 383 454</p>
+                  </div>
+
+                  <div class="textbox">
+                    <div class="textbox__icon">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-envelope"></use>
+                      </svg>
+                    </div>
+                    <p class="textbox__data textbox__data--5">mateuszlata2@gmail.com</p>
+                  </div>
+                </div>
+                </div>
             </section>
         </main>
         <footer class="footer">

@@ -27,6 +27,9 @@
 
     &__technologies {
         text-align: center;
+        background-color: $color-sec-light;
+        padding-top: 40rem;
+        margin-top: -38rem;
 
         h3 {
            @include section-header;  
@@ -36,10 +39,8 @@
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            background-color: $color-sec-light;
             padding: 3rem 1rem;
-            padding-top: 40rem;
-            margin-top: -38rem;
+            
 
             img {
                width: 15rem;

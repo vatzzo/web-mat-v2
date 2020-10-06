@@ -1,13 +1,18 @@
 .contact {
     width: 100%;
-    padding-top: 20rem;
+    padding-top: 15rem;
     margin-top: -15rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: $color-sec-light;
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
 
     &__heading {
         @include section-header;
@@ -33,7 +38,7 @@
             margin: 1.2rem 0;
             display: flex;
             align-items: center;
-            background-color: $color-white;
+            background-color: white;
 
             &:hover .textbox__icon{
                 border-color: $color-sec;
